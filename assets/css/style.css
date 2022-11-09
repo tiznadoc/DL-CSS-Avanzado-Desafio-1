@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.chat-container {
+    width: calc(100vw - 40px);
+    height: calc(100vh - 40px);
+    background-color: #D4DCFF;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.sidebar {
+    margin-top: 0px;
+    min-width: calc(200px - 2px);
+    width: calc(20% - 2px);
+    height: 100%;
+    background-color: #E8EBE4;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #444749;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 100px;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.profile .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.profile .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    min-width: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.profile .wrapper .name {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #A491D2;
+}
+
+.profile .wrapper .status {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: #0dc40d;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    background-color: #E8EBE4;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.dialog-menu {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn-chat {
+    border: 0px;
+    background-color: #d4dcff;
+    color: #7630bd;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px; 
+}
+
+.chats {
+    margin-top: 20px;
+    border-top: 1px solid #444749;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: calc(100vh - 220px);
+}
+
+.chat {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #444749;
+    padding: 10px 20px;
+}
+
+.chat .avatar {
+    width: 36px;
+    height: 36px;
+    margin: 20px;
+}
+
+.chat .avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 18px;
+}
+
+.chat .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.chat .wrapper .name {
+    max-width: 100px;
+    font-size: 16px;
+    color: #A491D2;
+}
+
+.chat .wrapper .message {
+    font-size: 12px;
+    color: #918d99;
+}
+
+.dialog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+    margin-right: 1px;
+    width: calc(80% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.start .logo {
+    width: 200px;  
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.dialog-box .start p {
+    font-size: 10px;
+    width: 200px;
+    height: fit-content;
+    text-align: center;
+}
+
+.dialog-box .start span {
+    font-size: 11px;
+}
